@@ -27,7 +27,7 @@ The purpose of this game is to teach network security to people with basic netwo
 
 ### Description
 
-You play as a CISO for a company. Your job is to have a balance between having a safe network, and happy employees. Anything that is an inconvienience to an employee will reduce their happiness, but if the network is not secure enough, then breaches will occur and your job could be in jeopardy. In order to be successful, you must keep a balance!
+You play as a CISO(Chief Information Security Officer) for a company. Your job is to have a balance between having a safe network, and happy employees. Anything that is an inconvienience to an employee will reduce their happiness, but if the network is not secure enough, then breaches will occur and your job could be in jeopardy. In order to be successful, you must keep a balance!
 
 ### Overall Goal
 
