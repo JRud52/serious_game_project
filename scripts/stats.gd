@@ -15,10 +15,4 @@ func _process(delta):
 	money_label.set_text("Money: $" + str(Game.money))
 	happiness_label.set_text("Happiness: " + str(Game.happiness) + "%")
 	pass
-
-func _on_ButtonGroup_button_selected( button ):
-	if (button.get_text() == "Add Money"):
-		Game.money += 10;
-	else:
-		Game.money -= 10;
-	pass # replace with function body
+	

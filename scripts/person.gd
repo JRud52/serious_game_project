@@ -1,12 +1,10 @@
 extends Sprite
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+var happiness = 100
+var intelligence
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
+	intelligence = int(rand_range(1,101))
 	set_process(true)
 	pass
 
