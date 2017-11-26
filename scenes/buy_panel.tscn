@@ -285,4 +285,8 @@ shortcut = null
 text = "Buy"
 flat = false
 
+[connection signal="about_to_show" from="." to="." method="_on_buy_panel_about_to_show"]
+
+[connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 1/buy_1" to="." method="_on_buy_1_pressed"]
+
 

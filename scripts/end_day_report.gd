@@ -10,12 +10,17 @@ func _ready():
 	pass
 
 
-func _on_buy_panel_about_to_show():
+func _on_next_button_pressed():
+	get_node("TabContainer").set_current_tab(1)
 	pass # replace with function body
 
 
-func _on_buy_1_pressed():
-	Game.firewall_upgrades[0][0] = true
-	Game.money -= Game.firewall_upgrades[0][1]
-	get_node("TabContainer/Firewall/firewall_details/Upgrade 1/buy_1").set_disabled(true)
+func _on_next_day_button_pressed():
+	get_node(".").hide()
+	get_node("TabContainer").set_current_tab(0)
+	pass # replace with function body
+
+
+func _on_end_day_report_about_to_show():
+	
 	pass # replace with function body

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=1]
 
-[ext_resource path="res://scripts/buy_panel.gd" type="Script" id=1]
+[ext_resource path="res://scripts/end_day_report.gd" type="Script" id=1]
 
 [node name="end_day_report" type="WindowDialog"]
 
@@ -38,7 +38,7 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 4.0
-margin/top = 32.0
+margin/top = 24.0
 margin/right = 4.0
 margin/bottom = 4.0
 
@@ -68,7 +68,7 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 4.0
-margin/top = 32.0
+margin/top = 24.0
 margin/right = 4.0
 margin/bottom = 4.0
 
@@ -87,5 +87,11 @@ enabled_focus_mode = 2
 shortcut = null
 text = "Next Day"
 flat = false
+
+[connection signal="about_to_show" from="." to="." method="_on_end_day_report_about_to_show"]
+
+[connection signal="pressed" from="TabContainer/Incidents/next_button" to="." method="_on_next_button_pressed"]
+
+[connection signal="pressed" from="TabContainer/Employees/next_day_button" to="." method="_on_next_day_button_pressed"]
 
 

@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scripts/menu_buttons.gd" type="Script" id=1]
+[ext_resource path="res://scenes/buy_panel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/end_day_report.tscn" type="PackedScene" id=3]
 
 [node name="ButtonGroup" type="Panel"]
 
@@ -58,5 +60,19 @@ enabled_focus_mode = 2
 shortcut = null
 text = "End Day"
 flat = false
+
+[node name="buy_panel" parent="." instance=ExtResource( 2 )]
+
+visibility/visible = false
+margin/left = 144.0
+margin/right = 883.0
+
+[node name="end_day_report" parent="." instance=ExtResource( 3 )]
+
+visibility/visible = false
+
+[connection signal="pressed" from="HBoxContainer/Purchase Button" to="." method="_on_Purchase_Button_pressed"]
+
+[connection signal="pressed" from="HBoxContainer/End Day Button" to="." method="_on_End_Day_Button_pressed"]
 
 
