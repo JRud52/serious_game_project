@@ -20,5 +20,9 @@ func _fixed_process(delta):
 		delta_total = 0
 		
 		money += money_rate
-		if money == 100:
+		if money_rate > 0:
 			happiness = 100
+			
+func end_day():
+	
+	pass
