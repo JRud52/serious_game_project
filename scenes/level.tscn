@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://scripts/game_manager.gd" type="Script" id=1]
 [ext_resource path="res://scenes/stats_bar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/action_menu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://fonts/Inconsolata-Reg.fnt" type="BitmapFont" id=4]
+[ext_resource path="res://scripts/person.gd" type="Script" id=5]
 
 [node name="Game" type="Control"]
 
@@ -37,7 +38,7 @@ offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
 
-[node name="Label" type="Label" parent="sprites_layer"]
+[node name="label" type="Label" parent="sprites_layer"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -45,7 +46,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 19.0
 margin/top = 68.0
-margin/right = 1001.0
+margin/right = 662.0
 margin/bottom = 532.0
 custom_fonts/font = ExtResource( 4 )
 text = "User: ~/ > login
@@ -67,5 +68,249 @@ Welcome to
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="person_1" type="Control" parent="sprites_layer" groups=[
+"People",
+]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+script/script = ExtResource( 5 )
+
+[node name="stats_label" type="Label" parent="sprites_layer"]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 692.0
+margin/top = 53.0
+margin/right = 772.0
+margin/bottom = 69.0
+custom_fonts/font = ExtResource( 4 )
+text = "Upgrades: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="upgrades_label" type="Label" parent="sprites_layer/stats_label"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 36.0
+margin/top = 25.0
+margin/right = 148.0
+margin/bottom = 155.0
+custom_fonts/font = ExtResource( 4 )
+text = "Firewall:
+
+Antivirus:
+
+Malware Scan: 
+
+Ad Blocker:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="firewall_bar" type="ProgressBar" parent="sprites_layer/stats_label"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 161.0
+margin/top = 24.0
+margin/right = 321.0
+margin/bottom = 41.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="antivirus_bar" type="ProgressBar" parent="sprites_layer/stats_label"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 162.0
+margin/top = 61.0
+margin/right = 322.0
+margin/bottom = 78.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="malware_bar" type="ProgressBar" parent="sprites_layer/stats_label"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 162.0
+margin/top = 99.0
+margin/right = 322.0
+margin/bottom = 116.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="ad_bar" type="ProgressBar" parent="sprites_layer/stats_label"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 161.0
+margin/top = 138.0
+margin/right = 321.0
+margin/bottom = 155.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="stats_label2" type="Label" parent="sprites_layer"]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 691.0
+margin/top = 235.0
+margin/right = 883.0
+margin/bottom = 251.0
+custom_fonts/font = ExtResource( 4 )
+text = "Productivity Per Person:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="people_label" type="Label" parent="sprites_layer/stats_label2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 36.0
+margin/top = 25.0
+margin/right = 108.0
+margin/bottom = 155.0
+custom_fonts/font = ExtResource( 4 )
+text = "Person 1:
+
+Person 2:
+
+Person 3:
+
+Person 4:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="person1_bar" type="ProgressBar" parent="sprites_layer/stats_label2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 160.0
+margin/top = 22.0
+margin/right = 320.0
+margin/bottom = 39.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="person2_bar" type="ProgressBar" parent="sprites_layer/stats_label2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 161.0
+margin/top = 61.0
+margin/right = 321.0
+margin/bottom = 78.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="person3_bar" type="ProgressBar" parent="sprites_layer/stats_label2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 161.0
+margin/top = 101.0
+margin/right = 321.0
+margin/bottom = 118.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+[node name="person4_bar" type="ProgressBar" parent="sprites_layer/stats_label2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 162.0
+margin/top = 138.0
+margin/right = 322.0
+margin/bottom = 155.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
 
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=3 format=1]
 
 [ext_resource path="res://scripts/buy_panel.gd" type="Script" id=1]
+[ext_resource path="res://scripts/firewall_upgrades.gd" type="Script" id=2]
 
 [node name="buy_panel" type="WindowDialog"]
 
@@ -41,6 +42,7 @@ margin/left = 4.0
 margin/top = 32.0
 margin/right = 4.0
 margin/bottom = 4.0
+script/script = ExtResource( 2 )
 
 [node name="firewall_details" type="TabContainer" parent="TabContainer/Firewall"]
 
@@ -65,8 +67,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 4.0
 margin/top = 32.0
-margin/right = 671.0
-margin/bottom = 260.0
+margin/right = 4.0
+margin/bottom = 4.0
 
 [node name="upgrade_label" type="Label" parent="TabContainer/Firewall/firewall_details/Upgrade 1"]
 
@@ -78,8 +80,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 4.0
 margin/top = 0.0
-margin/right = -663.0
-margin/bottom = -207.0
+margin/right = 6.0
+margin/bottom = 44.0
 text = "Something about the details of this tier of serurity offering
 
 some other line
@@ -113,7 +115,6 @@ flat = false
 
 [node name="Upgrade 2" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
-editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -136,8 +137,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 4.0
 margin/top = 0.0
-margin/right = -663.0
-margin/bottom = -207.0
+margin/right = 5.0
+margin/bottom = 49.0
 text = "Something about the details of this tier of serurity offering
 
 some other line
@@ -153,7 +154,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="buy_1" type="Button" parent="TabContainer/Firewall/firewall_details/Upgrade 2"]
+[node name="buy_2" type="Button" parent="TabContainer/Firewall/firewall_details/Upgrade 2"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -171,7 +172,6 @@ flat = false
 
 [node name="Upgrade 3" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
-editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -194,8 +194,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 4.0
 margin/top = 0.0
-margin/right = -663.0
-margin/bottom = -207.0
+margin/right = 2.0
+margin/bottom = 47.0
 text = "Something about the details of this tier of serurity offering
 
 some other line
@@ -211,7 +211,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="buy_1" type="Button" parent="TabContainer/Firewall/firewall_details/Upgrade 3"]
+[node name="buy_3" type="Button" parent="TabContainer/Firewall/firewall_details/Upgrade 3"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -229,7 +229,6 @@ flat = false
 
 [node name="Upgrade 4" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
-editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -252,8 +251,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 4.0
 margin/top = 0.0
-margin/right = -663.0
-margin/bottom = -207.0
+margin/right = 5.0
+margin/bottom = 47.0
 text = "Something about the details of this tier of serurity offering
 
 some other line
@@ -269,7 +268,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="buy_1" type="Button" parent="TabContainer/Firewall/firewall_details/Upgrade 4"]
+[node name="buy_4" type="Button" parent="TabContainer/Firewall/firewall_details/Upgrade 4"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -287,6 +286,12 @@ flat = false
 
 [connection signal="about_to_show" from="." to="." method="_on_buy_panel_about_to_show"]
 
-[connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 1/buy_1" to="." method="_on_buy_1_pressed"]
+[connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 1/buy_1" to="TabContainer/Firewall" method="_on_buy_1_pressed"]
+
+[connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 2/buy_2" to="TabContainer/Firewall" method="_on_buy_2_pressed"]
+
+[connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 3/buy_3" to="TabContainer/Firewall" method="_on_buy_3_pressed"]
+
+[connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 4/buy_4" to="TabContainer/Firewall" method="_on_buy_4_pressed"]
 
 

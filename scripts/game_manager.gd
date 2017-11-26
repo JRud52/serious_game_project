@@ -1,28 +1,29 @@
 extends Control
 
-var happiness = 100
-var money = 1000
+var productivity = 100
+var money = 500
 var action_points = 5
 
-#var people
-var firewall_upgrades
+var people
 var day = 1
 
 func _ready():
-	firewall_upgrades = [
-	[false, 100], 
-	[false, 200], 
-	[false, 300], 
-	[false, 400]
-	]
-	
+	people = get_tree().get_nodes_in_group("People")
 	pass
 	
 func update_values():
+	var productivity_total = 0
+	for person in people:
+		person.update_values()
+		productivity_total += person.productivity
+	productivity = productivity_total / people.size()
+	
 	pass
 
 func end_day():
 	update_values()
+	
+	money += 500 * productivity / 100
 	day += 1
 	
 	pass
