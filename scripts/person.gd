@@ -9,15 +9,12 @@ func _ready():
 	infections = []
 	
 	intelligence = int(rand_range(11,101))
-	update_values()
-	pass
 
 func update_values():
 	productivity = 100
 	for infection in infections:
-		productivity -= infection[0] * 10
-		
+		productivity -= infection
+	
 	if productivity < 0: 
 		productivity = 0
-		
-	pass
+	

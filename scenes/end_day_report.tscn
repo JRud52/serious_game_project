@@ -88,8 +88,6 @@ shortcut = null
 text = "Next Day"
 flat = false
 
-[connection signal="about_to_show" from="." to="." method="_on_end_day_report_about_to_show"]
-
 [connection signal="pressed" from="TabContainer/Incidents/next_button" to="." method="_on_next_button_pressed"]
 
 [connection signal="pressed" from="TabContainer/Employees/next_day_button" to="." method="_on_next_day_button_pressed"]
