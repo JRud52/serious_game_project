@@ -5,6 +5,18 @@ var productivity = 100
 var money = 500
 var action_points = 5
 
+var virus_caught = 0
+var virus_infections = 0
+var virus_removed = 0
+
+var malware_caught = 0
+var malware_infections = 0
+var malware_removed = 0
+
+var worm_caught = 0
+var worm_infections = 0
+var worm_removed = 0
+
 var people
 
 func _ready():
@@ -20,10 +32,13 @@ func infect_people():
 		
 		if choose < 3:
 			person.infections.push_front(int(rand_range(50,101)))
+			worm_infections += 1
 		elif choose < 15:
 			person.infections.push_front(int(rand_range(20,50)))
+			malware_infections += 1
 		elif choose < 40:
 			person.infections.push_front(int(rand_range(1,20)))
+			virus_infections += 1
 
 func end_day():
 	infect_people()
