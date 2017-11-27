@@ -46,7 +46,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 19.0
 margin/top = 68.0
-margin/right = 662.0
+margin/right = 661.0
 margin/bottom = 532.0
 custom_fonts/font = ExtResource( 4 )
 text = "User: ~/ > login
@@ -62,14 +62,11 @@ Welcome to
  \\ \\_____\\  \\ \\_\\  \\/\\_____\\  \\ \\_____\\     \\/\\_____\\  \\ \\_\\  \\ \\_\\ \\ \\_\\ 
   \\/_____/   \\/_/   \\/_____/   \\/_____/      \\/_____/   \\/_/   \\/_/  \\/_/ 
 
-You are in the role of a CISO, a Chief Information Security Officer, working for
-ABC inc. There are 4 people that work in the office, and your job is to make sure
-that any malicious content stays out of the network. If anything does make it 
-through, it should be dealt with quickly so as not to decrease the productivity of 
-the employees. 
+You are in the role of a CISO, a Chief Information Security Officer, working for ABC inc. There are 4 people that work in the office, and your job is to make sure that any malicious content stays out of the network. If anything does make it  through, it should be dealt with quickly so as not to decrease the productivity of the employees. 
 
-Use the \"Purchase Upgrades\" button below to upgrade the network's hardware.
+Use the \"Purchase Upgrades\" button below to upgrade the network.
 Use the \"End Day\" button below to end the current day and start the next."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -193,9 +190,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 162.0
+margin/left = 161.0
 margin/top = 61.0
-margin/right = 322.0
+margin/right = 321.0
 margin/bottom = 78.0
 range/min = 0.0
 range/max = 100.0
@@ -212,9 +209,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 162.0
+margin/left = 161.0
 margin/top = 99.0
-margin/right = 322.0
+margin/right = 321.0
 margin/bottom = 116.0
 range/min = 0.0
 range/max = 100.0
@@ -246,7 +243,6 @@ percent/visible = true
 
 [node name="stats_label2" type="Label" parent="sprites_layer"]
 
-editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -289,9 +285,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 160.0
+margin/left = 161.0
 margin/top = 22.0
-margin/right = 320.0
+margin/right = 321.0
 margin/bottom = 39.0
 range/min = 0.0
 range/max = 100.0
@@ -346,9 +342,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 162.0
+margin/left = 161.0
 margin/top = 138.0
-margin/right = 322.0
+margin/right = 321.0
 margin/bottom = 155.0
 range/min = 0.0
 range/max = 100.0

@@ -33,6 +33,8 @@ tabs_visible = true
 
 [node name="Firewall" type="Container" parent="TabContainer"]
 
+editor/display_folded = true
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -127,6 +129,8 @@ flat = false
 
 [node name="Upgrade 2" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
+editor/display_folded = true
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -152,7 +156,8 @@ margin/right = 5.0
 margin/bottom = 49.0
 text = "Stateful Filtering 
 
-Also called circuit-level gateways, stateful filters perform the same work as the packet filters, but on the transport layer (layer 4) of the OSI model. "
+Also called circuit-level gateways, stateful filters perform the same work as the packet filters, but on the transport layer (layer 4) of the OSI model. This is achieved by retaining packets until enough information is available to make a judgement about its state."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -175,6 +180,7 @@ flat = false
 
 [node name="Upgrade 3" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -199,17 +205,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 2.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "Application Layer Filtering
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+As the name suggests, Application Layer Filtering exists on the application layer of the OSI model. The key benefit of application layer filtering is that it can \"understand\" certain applications and protocols (such as File Transfer Protocol (FTP), Domain Name System (DNS), or Hypertext Transfer Protocol (HTTP)). This is useful as it is able to detect if an unwanted application or service is attempting to bypass the firewall using a protocol on an allowed port, or detect if a protocol is being abused in any harmful way."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -232,7 +231,7 @@ flat = false
 
 [node name="Upgrade 4" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
-visibility/visible = false
+editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -256,17 +255,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "Proxy Server Firewall
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+A proxy server (running either on dedicated hardware or as software on a general-purpose machine) may act as a firewall by responding to input packets (connection requests, for example) in the manner of an application, while blocking other packets. A proxy server is a gateway from one network to another for a specific network application, in the sense that it functions as a proxy on behalf of the network user."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -334,6 +326,8 @@ tabs_visible = true
 
 [node name="Upgrade 1" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
 
+editor/display_folded = true
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -357,7 +351,9 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 4.0
 margin/bottom = 44.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "Signature Based Detection
+
+Traditional antivirus software relies heavily upon signatures to identify malware. Substantially, when a virus arrives in the hands of an antivirus firm, it is analysed by virus researchers or by dynamic analysis systems. Then, once it is determined to be a virus, a proper signature of the file is extracted and added to the signatures database of the antivirus software."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -381,6 +377,7 @@ flat = false
 
 [node name="Upgrade 2" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -405,17 +402,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 49.0
-text = "Something about the details of this tier of serurity offering
+text = "Heuristic Detection
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Many viruses start as a single infection and through either mutation or refinements by other attackers, can grow into dozens of slightly different strains, called variants. Generic detection refers to the detection and removal of multiple threats using a single virus definition."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -438,6 +428,7 @@ flat = false
 
 [node name="Upgrade 3" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -462,17 +453,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 2.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "Rootkit Detection
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Anti-virus software can attempt to scan for rootkits. A rootkit is a type of malware designed to gain administrative-level control over a computer system without being detected. Rootkits can change how the operating system functions and in some cases can tamper with the anti-virus program and render it ineffective. Rootkits are also difficult to remove, in some cases requiring a complete re-installation of the operating system."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -495,6 +479,7 @@ flat = false
 
 [node name="Upgrade 4" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -519,17 +504,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "Real-Time Protection
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Real-time protection refers to the automatic protection provided by most antivirus, anti-spyware, and other anti-malware programs. This monitors computer systems for suspicious activity such as computer viruses, spyware, adware, and other malicious objects in 'real-time', in other words while data loaded into the computer's active memory: when opening an email, browsing the web, or when a file already on the computer is opened or executed."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -597,6 +575,8 @@ tabs_visible = true
 
 [node name="Upgrade 1" type="Container" parent="TabContainer/Malware Scan/malware_details"]
 
+editor/display_folded = true
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -620,7 +600,9 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 4.0
 margin/bottom = 44.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "On-Access Detection
+
+A specific component of anti-virus and anti-malware software, commonly referred to as an on-access or real-time scanner, hooks deep into the operating system's core or kernel and functions in a manner similar to how certain malware itself would attempt to operate, though with the user's informed permission for protecting the system. Any time the operating system accesses a file, the on-access scanner checks if the file is a 'legitimate' file or not."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -644,6 +626,7 @@ flat = false
 
 [node name="Upgrade 2" type="Container" parent="TabContainer/Malware Scan/malware_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -668,17 +651,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 49.0
-text = "Something about the details of this tier of serurity offering
+text = "Manual Scanning
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Anti-malware software programs can be used solely for detection and removal of malware software that has already been installed onto a computer. This type of anti-malware software scans the contents of the Windows registry, operating system files, and installed programs on a computer and will provide a list of any threats found, allowing the user to choose which files to delete or keep, or to compare this list to a list of known malware components, removing files that match."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -701,6 +677,7 @@ flat = false
 
 [node name="Upgrade 3" type="Container" parent="TabContainer/Malware Scan/malware_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -725,17 +702,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 2.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "Real-Time Detection
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Anti-malware programs can provide real time protection against the installation of malware software on a computer. This type of malware protection works the same way as that of antivirus protection in that the anti-malware software scans all incoming network data for malware and blocks any threats it comes across."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -758,7 +728,7 @@ flat = false
 
 [node name="Upgrade 4" type="Container" parent="TabContainer/Malware Scan/malware_details"]
 
-visibility/visible = false
+editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -782,17 +752,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "Advanced Features
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Some viruses disable System Restore and other important Windows tools such as Task Manager and Command Prompt. Many such viruses can be removed by rebooting the computer, entering safe mode with networking, and then using the anti-malware software to detect and remove the malware."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -860,6 +823,8 @@ tabs_visible = true
 
 [node name="Upgrade 1" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
 
+editor/display_folded = true
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -883,7 +848,9 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 4.0
 margin/bottom = 44.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "Browser Integration
+
+Many web browsers block unsolicited pop-up ads automatically. Content filtering can be added to Firefox, Chromium-based browsers, Opera, Safari and other browsers with extensions such as AdBlock, Adblock Plus and uBlock Origin, and a number of sources provide regularly updated filter lists."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -907,6 +874,7 @@ flat = false
 
 [node name="Upgrade 2" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -931,17 +899,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 49.0
-text = "Something about the details of this tier of serurity offering
+text = "External Programs
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+A number of external software applications offer ad filtering as a primary or additional feature. A traditional solution is to customize an HTTP proxy (or web proxy) to filter content. These programs work by caching and filtering content before it is displayed in a user's browser. This provides an opportunity to remove not only ads but also content which may be offensive, inappropriate, or even malicious (Drive-by download)."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -964,6 +925,7 @@ flat = false
 
 [node name="Upgrade 3" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -988,17 +950,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 2.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "DNS Cache Filtering
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+This method operates by filtering and changing records of a DNS cache. On most operating systems the domain name resolution always goes via DNS cache. By changing records within the cache or preventing records from entering the cache, programs are allowed or prevented from accessing domain names."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -1021,7 +976,7 @@ flat = false
 
 [node name="Upgrade 4" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
 
-visibility/visible = false
+editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -1045,17 +1000,10 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 47.0
-text = "Something about the details of this tier of serurity offering
+text = "DNS Firewall
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+The filtering and selective blocking of DNS traffic can be performed by a DNS firewall which is configured to block DNS name resolution based on name patterns. A DNS firewall, can also block access to IP addresses for names not resolved via DNS. Thus prevent display of advertisements from servers accessed directly using their IP addresses."
+autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
