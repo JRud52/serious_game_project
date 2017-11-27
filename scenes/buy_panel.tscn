@@ -33,7 +33,6 @@ tabs_visible = true
 
 [node name="Firewall" type="Container" parent="TabContainer"]
 
-editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -77,6 +76,8 @@ tabs_visible = true
 
 [node name="Upgrade 1" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
+editor/display_folded = true
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -100,7 +101,9 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 4.0
 margin/bottom = 44.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "Packet Filtering
+
+Packet filtering was the first reported type of firewall. It works by looking at netwrok addresses and ports of packets to determine if they must be allowed through, dropped, or rejected. This happens using the filter's set of rules, which can be customized and altered to the user's needs."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -124,7 +127,6 @@ flat = false
 
 [node name="Upgrade 2" type="Container" parent="TabContainer/Firewall/firewall_details"]
 
-visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -148,17 +150,9 @@ margin/left = 4.0
 margin/top = 0.0
 margin/right = 5.0
 margin/bottom = 49.0
-text = "Something about the details of this tier of serurity offering
+text = "Stateful Filtering 
 
-some other line
-blah blah 
-
-
-
-
-
-
-adlfadfalskdfj;lkasdj;f"
+Also called circuit-level gateways, stateful filters perform the same work as the packet filters, but on the transport layer (layer 4) of the OSI model. "
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -319,7 +313,7 @@ margin/left = 2.0
 margin/top = 0.0
 margin/right = 702.0
 margin/bottom = 122.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls typically establish a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "Antivirus or anti-virus software (often abbreviated as AV), is computer software used to prevent, detect and remove malicious software. Antivirus software was originally developed to detect and remove computer viruses, hence the name. However, with the proliferation of other kinds of malware, antivirus software started to provide protection from other computer threats. In particular, modern antivirus software can protect from: malicious browser helper objects (BHOs), browser hijackers, ransomware, keyloggers, backdoors, rootkits, trojan horses, worms, malicious LSPs, dialers, fraudtools, adware and spyware."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -582,7 +576,7 @@ margin/left = 2.0
 margin/top = 0.0
 margin/right = 702.0
 margin/bottom = 122.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls typically establish a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "Malware scanners primarily scan and remove malicious software, including rogue security software, adware, and spyware. This software generally performs a more in depth analysis of a system than a regular antivirus software as it is specialized to getting rid of malware."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -821,6 +815,7 @@ flat = false
 
 [node name="Ad Blocker" type="Container" parent="TabContainer"]
 
+editor/display_folded = true
 visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
@@ -844,7 +839,7 @@ margin/left = 2.0
 margin/top = 0.0
 margin/right = 702.0
 margin/bottom = 122.0
-text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls typically establish a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+text = "Ad blocking or ad filtering is a type of software (or less commonly, a computer hardware device), that can remove or alter advertising content from a webpage, website, or a mobile app. Ad blockers are available for a range of computer platforms, including desktop and laptop computers, tablet computers and smartphones. A variety of methods have been used for blocking advertisements. The impacts of this software are wide-ranging and the use of ad blocking software is increasing."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
