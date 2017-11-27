@@ -26,8 +26,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 17.0
 margin/top = 39.0
-margin/right = -9.0
-margin/bottom = -3.0
+margin/right = 10.0
+margin/bottom = 17.0
 
 [node name="next_button" type="Button" parent="Incidents"]
 
@@ -86,6 +86,36 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="malware_caught_label" type="Label" parent="Incidents"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 70.0
+margin/top = 100.0
+margin/right = 166.0
+margin/bottom = 114.0
+text = "Caught:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="worm_caught_label" type="Label" parent="Incidents"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 70.0
+margin/top = 190.0
+margin/right = 166.0
+margin/bottom = 204.0
+text = "Caught:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="virus_infections_label" type="Label" parent="Incidents"]
 
 focus/ignore_mouse = true
@@ -101,6 +131,36 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="malware_infections_label" type="Label" parent="Incidents"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 70.0
+margin/top = 120.0
+margin/right = 193.0
+margin/bottom = 134.0
+text = "Current Infections: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="worm_infections_label" type="Label" parent="Incidents"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 70.0
+margin/top = 210.0
+margin/right = 193.0
+margin/bottom = 224.0
+text = "Current Infections: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="virus_removed_label" type="Label" parent="Incidents"]
 
 focus/ignore_mouse = true
@@ -111,6 +171,36 @@ margin/left = 70.0
 margin/top = 50.0
 margin/right = 193.0
 margin/bottom = 64.0
+text = "Removed:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="malware_removed_label" type="Label" parent="Incidents"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 70.0
+margin/top = 140.0
+margin/right = 193.0
+margin/bottom = 154.0
+text = "Removed:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="worm_removed_label" type="Label" parent="Incidents"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 70.0
+margin/top = 230.0
+margin/right = 193.0
+margin/bottom = 244.0
 text = "Removed:"
 percent_visible = 1.0
 lines_skipped = 0

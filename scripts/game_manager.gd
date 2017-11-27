@@ -12,6 +12,15 @@ var person4
 var firewall_bar
 var firewall_upgrades
 
+var antivirus_bar
+var antivirus_upgrades
+
+var malware_bar
+var malware_upgrades
+
+var ad_bar
+var ad_upgrades
+
 func _ready():
 	set_fixed_process(true)
 	
@@ -26,12 +35,21 @@ func _ready():
 	
 	firewall_bar = get_node("sprites_layer/stats_label/firewall_bar")
 	firewall_upgrades = get_node("hud_layer/action_menu/buy_panel/TabContainer/Firewall")
+	
+	antivirus_bar = get_node("sprites_layer/stats_label/antivirus_bar")
+	antivirus_upgrades = get_node("hud_layer/action_menu/buy_panel/TabContainer/Antivirus")
+	
+	malware_bar = get_node("sprites_layer/stats_label/malware_bar")
+	malware_upgrades = get_node("hud_layer/action_menu/buy_panel/TabContainer/Malware Scan")
+	
+	ad_bar = get_node("sprites_layer/stats_label/ad_bar")
+	ad_upgrades = get_node("hud_layer/action_menu/buy_panel/TabContainer/Ad Blocker")
 
 func _fixed_process(delta):
 	firewall_bar.set_val(firewall_upgrades.percent_done)
-	#firewall_bar.set_val(firewall_upgrades.percent_done)
-	#firewall_bar.set_val(firewall_upgrades.percent_done)
-	#firewall_bar.set_val(firewall_upgrades.percent_done)
+	antivirus_bar.set_val(antivirus_upgrades.percent_done)
+	malware_bar.set_val(malware_upgrades.percent_done)
+	ad_bar.set_val(ad_upgrades.percent_done)
 	
 	person1_bar.set_val(person1.productivity)
 	person2_bar.set_val(person2.productivity)

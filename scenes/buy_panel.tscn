@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scripts/firewall_upgrades.gd" type="Script" id=1]
+[ext_resource path="res://scripts/antivirus_upgrades.gd" type="Script" id=2]
+[ext_resource path="res://scripts/malware_upgrades.gd" type="Script" id=3]
+[ext_resource path="res://scripts/ad_upgrades.gd" type="Script" id=4]
 
 [node name="buy_panel" type="WindowDialog"]
 
@@ -290,6 +293,794 @@ shortcut = null
 text = "Buy"
 flat = false
 
+[node name="Antivirus" type="Container" parent="TabContainer"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+script/script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="TabContainer/Antivirus"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 2.0
+margin/top = 0.0
+margin/right = 702.0
+margin/bottom = 122.0
+text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls typically establish a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="antivirus_details" type="TabContainer" parent="TabContainer/Antivirus"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -6.0
+margin/top = 129.0
+margin/right = 709.0
+margin/bottom = 331.0
+tab_align = 0
+tabs_visible = true
+
+[node name="Upgrade 1" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Antivirus/antivirus_details/Upgrade 1"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 4.0
+margin/bottom = 44.0
+text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_1" type="Button" parent="TabContainer/Antivirus/antivirus_details/Upgrade 1"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 2" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Antivirus/antivirus_details/Upgrade 2"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 5.0
+margin/bottom = 49.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_2" type="Button" parent="TabContainer/Antivirus/antivirus_details/Upgrade 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 3" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Antivirus/antivirus_details/Upgrade 3"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 2.0
+margin/bottom = 47.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_3" type="Button" parent="TabContainer/Antivirus/antivirus_details/Upgrade 3"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 4" type="Container" parent="TabContainer/Antivirus/antivirus_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Antivirus/antivirus_details/Upgrade 4"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 5.0
+margin/bottom = 47.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_4" type="Button" parent="TabContainer/Antivirus/antivirus_details/Upgrade 4"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Malware Scan" type="Container" parent="TabContainer"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+script/script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="TabContainer/Malware Scan"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 2.0
+margin/top = 0.0
+margin/right = 702.0
+margin/bottom = 122.0
+text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls typically establish a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="malware_details" type="TabContainer" parent="TabContainer/Malware Scan"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -6.0
+margin/top = 129.0
+margin/right = 709.0
+margin/bottom = 331.0
+tab_align = 0
+tabs_visible = true
+
+[node name="Upgrade 1" type="Container" parent="TabContainer/Malware Scan/malware_details"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Malware Scan/malware_details/Upgrade 1"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 4.0
+margin/bottom = 44.0
+text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_1" type="Button" parent="TabContainer/Malware Scan/malware_details/Upgrade 1"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 2" type="Container" parent="TabContainer/Malware Scan/malware_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Malware Scan/malware_details/Upgrade 2"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 5.0
+margin/bottom = 49.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_2" type="Button" parent="TabContainer/Malware Scan/malware_details/Upgrade 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 3" type="Container" parent="TabContainer/Malware Scan/malware_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Malware Scan/malware_details/Upgrade 3"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 2.0
+margin/bottom = 47.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_3" type="Button" parent="TabContainer/Malware Scan/malware_details/Upgrade 3"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 4" type="Container" parent="TabContainer/Malware Scan/malware_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Malware Scan/malware_details/Upgrade 4"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 5.0
+margin/bottom = 47.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_4" type="Button" parent="TabContainer/Malware Scan/malware_details/Upgrade 4"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Ad Blocker" type="Container" parent="TabContainer"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+script/script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="TabContainer/Ad Blocker"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 2.0
+margin/top = 0.0
+margin/right = 702.0
+margin/bottom = 122.0
+text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls typically establish a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ad_details" type="TabContainer" parent="TabContainer/Ad Blocker"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -6.0
+margin/top = 129.0
+margin/right = 709.0
+margin/bottom = 331.0
+tab_align = 0
+tabs_visible = true
+
+[node name="Upgrade 1" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Ad Blocker/ad_details/Upgrade 1"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 4.0
+margin/bottom = 44.0
+text = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted internal network and untrusted outside network, such as the Internet."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_1" type="Button" parent="TabContainer/Ad Blocker/ad_details/Upgrade 1"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 2" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Ad Blocker/ad_details/Upgrade 2"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 5.0
+margin/bottom = 49.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_2" type="Button" parent="TabContainer/Ad Blocker/ad_details/Upgrade 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 3" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Ad Blocker/ad_details/Upgrade 3"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 2.0
+margin/bottom = 47.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_3" type="Button" parent="TabContainer/Ad Blocker/ad_details/Upgrade 3"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
+[node name="Upgrade 4" type="Container" parent="TabContainer/Ad Blocker/ad_details"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+
+[node name="upgrade_label" type="Label" parent="TabContainer/Ad Blocker/ad_details/Upgrade 4"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 5.0
+margin/bottom = 47.0
+text = "Something about the details of this tier of serurity offering
+
+some other line
+blah blah 
+
+
+
+
+
+
+adlfadfalskdfj;lkasdj;f"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buy_4" type="Button" parent="TabContainer/Ad Blocker/ad_details/Upgrade 4"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 628.0
+margin/top = 127.0
+margin/right = 703.0
+margin/bottom = 162.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Buy"
+flat = false
+
 [connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 1/buy_1" to="TabContainer/Firewall" method="_on_buy_1_pressed"]
 
 [connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 2/buy_2" to="TabContainer/Firewall" method="_on_buy_2_pressed"]
@@ -297,5 +1088,29 @@ flat = false
 [connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 3/buy_3" to="TabContainer/Firewall" method="_on_buy_3_pressed"]
 
 [connection signal="pressed" from="TabContainer/Firewall/firewall_details/Upgrade 4/buy_4" to="TabContainer/Firewall" method="_on_buy_4_pressed"]
+
+[connection signal="pressed" from="TabContainer/Antivirus/antivirus_details/Upgrade 1/buy_1" to="TabContainer/Antivirus" method="_on_buy_1_pressed"]
+
+[connection signal="pressed" from="TabContainer/Antivirus/antivirus_details/Upgrade 2/buy_2" to="TabContainer/Antivirus" method="_on_buy_2_pressed"]
+
+[connection signal="pressed" from="TabContainer/Antivirus/antivirus_details/Upgrade 3/buy_3" to="TabContainer/Antivirus" method="_on_buy_3_pressed"]
+
+[connection signal="pressed" from="TabContainer/Antivirus/antivirus_details/Upgrade 4/buy_4" to="TabContainer/Antivirus" method="_on_buy_4_pressed"]
+
+[connection signal="pressed" from="TabContainer/Malware Scan/malware_details/Upgrade 1/buy_1" to="TabContainer/Malware Scan" method="_on_buy_1_pressed"]
+
+[connection signal="pressed" from="TabContainer/Malware Scan/malware_details/Upgrade 2/buy_2" to="TabContainer/Malware Scan" method="_on_buy_2_pressed"]
+
+[connection signal="pressed" from="TabContainer/Malware Scan/malware_details/Upgrade 3/buy_3" to="TabContainer/Malware Scan" method="_on_buy_3_pressed"]
+
+[connection signal="pressed" from="TabContainer/Malware Scan/malware_details/Upgrade 4/buy_4" to="TabContainer/Malware Scan" method="_on_buy_4_pressed"]
+
+[connection signal="pressed" from="TabContainer/Ad Blocker/ad_details/Upgrade 1/buy_1" to="TabContainer/Ad Blocker" method="_on_buy_1_pressed"]
+
+[connection signal="pressed" from="TabContainer/Ad Blocker/ad_details/Upgrade 2/buy_2" to="TabContainer/Ad Blocker" method="_on_buy_2_pressed"]
+
+[connection signal="pressed" from="TabContainer/Ad Blocker/ad_details/Upgrade 3/buy_3" to="TabContainer/Ad Blocker" method="_on_buy_3_pressed"]
+
+[connection signal="pressed" from="TabContainer/Ad Blocker/ad_details/Upgrade 4/buy_4" to="TabContainer/Ad Blocker" method="_on_buy_4_pressed"]
 
 

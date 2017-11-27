@@ -57,7 +57,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="action_points_label" type="Label" parent="HBoxContainer"]
+[node name="day_label" type="Label" parent="HBoxContainer"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -65,22 +65,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 253.0
 margin/top = 8.0
-margin/right = 354.0
-margin/bottom = 22.0
-text = "Action Points: 5"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="day_label" type="Label" parent="HBoxContainer"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 379.0
-margin/top = 8.0
-margin/right = 427.0
+margin/right = 301.0
 margin/bottom = 22.0
 text = "Day: 15"
 percent_visible = 1.0

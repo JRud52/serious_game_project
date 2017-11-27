@@ -1,19 +1,26 @@
 extends Control
 
-var intelligence
 var productivity = 100
-var infections
+
+var virus_infections
+var malware_infections
+var worm_infections
 
 func _ready():
-	# [prod_impact, difficulty]
-	infections = []
-	
-	intelligence = int(rand_range(11,101))
+	virus_infections = []
+	malware_infections = []
+	worm_infections = []
 
 func update_values():
 	productivity = 100
-	for infection in infections:
-		productivity -= infection
+	for virus in virus_infections:
+		productivity -= virus
+		
+	for malware in malware_infections:
+		productivity -= malware
+		
+	for worm in worm_infections:
+		productivity -= worm
 	
 	if productivity < 0: 
 		productivity = 0

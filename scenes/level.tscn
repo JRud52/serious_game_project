@@ -54,17 +54,22 @@ text = "User: ~/ > login
 Login: ***************
 Password: ************************************
 
-verifying ................................................................. done
-starting session ....................................................... done
-updating log files .................................................... done
-
 Welcome to
 
  ______     __     ______     ______        ______     __     __    __    
 /\\  ___\\   /\\ \\   /\\  ___\\   /\\  __ \\      /\\  ___\\   /\\ \\   /\\ \"-./  \\   
 \\ \\ \\____  \\ \\ \\  \\ \\___  \\  \\ \\ \\/\\ \\     \\ \\___  \\  \\ \\ \\  \\ \\ \\-./\\ \\  
  \\ \\_____\\  \\ \\_\\  \\/\\_____\\  \\ \\_____\\     \\/\\_____\\  \\ \\_\\  \\ \\_\\ \\ \\_\\ 
-  \\/_____/   \\/_/   \\/_____/   \\/_____/      \\/_____/   \\/_/   \\/_/  \\/_/ "
+  \\/_____/   \\/_/   \\/_____/   \\/_____/      \\/_____/   \\/_/   \\/_/  \\/_/ 
+
+You are in the role of a CISO, a Chief Information Security Officer, working for
+ABC inc. There are 4 people that work in the office, and your job is to make sure
+that any malicious content stays out of the network. If anything does make it 
+through, it should be dealt with quickly so as not to decrease the productivity of 
+the employees. 
+
+Use the \"Purchase Upgrades\" button below to upgrade the network's hardware.
+Use the \"End Day\" button below to end the current day and start the next."
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -127,7 +132,6 @@ script/script = ExtResource( 5 )
 
 [node name="stats_label" type="Label" parent="sprites_layer"]
 
-editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
