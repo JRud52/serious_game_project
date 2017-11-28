@@ -1,4 +1,4 @@
-# Game Outline
+# CISO Sim Outline
 
 ## What is Being Taught
 
@@ -11,13 +11,13 @@ The purpose of this game is to teach network security to people with basic netwo
     - Malware
     - Spyware
     - Worms
-- Defences
+- Defences (Different Tiers with different features)
     - Firewall
-    - Antivirus (Different Tiers with different features)
+    - Antivirus
     - Malware scans
     - Ad blockers
 - Employee moral
-    - Keeping employees happy
+    - Keeping employees productive
     - Minimizing impact on employees
     - Disaster recovery procedures
     - Fallback plans
@@ -27,22 +27,24 @@ The purpose of this game is to teach network security to people with basic netwo
 
 ### Description
 
-You play as a CISO(Chief Information Security Officer) for a company. Your job is to have a balance between having a safe network, and happy employees. Anything that is an inconvienience to an employee will reduce their happiness, but if the network is not secure enough, then breaches will occur and your job could be in jeopardy. In order to be successful, you must keep a balance!
+You play as a CISO(Chief Information Security Officer) for a company. Your job is to have a balance between having a safe network, and productive employees. Anything that is an inconvienience to an employee will reduce their productiveness, but if the network is not secure enough, then breaches will occur and your job could be in jeopardy. In order to be successful, you must keep a balance!
 
 ### Overall Goal
 
-The goal of each level is to minimize the damage from viruses and malware coming into the network from the internet. If a node is compromised, it can be quarantined, and a backup restored from the server. This takes time, so the server must be defended from the attacks until the backup can complete. If the server is compromised, the level is lost.
+The goal of each level is to minimize the damage from viruses and malware coming into the network from the internet. If a node is compromised, it reduces that employees productivity by a certain amount. If the overall productivity is reduced to below 50%, then the company starts losing money each turn until the problem is dealt with.
 
 ### Level Structure
 
-The level structure will consist of simplified versions of network topologies. There will be routers, nodes (users), and a backup server. The router acts as a central hub that serves the data packets across the network. The packets can be good, or bad. The bad packets contain malicious entities that could potentially result in a breach.
+The level structure will consist of increasing difficulties. Each level will have a higher chance of infection, and the defences will have lower detection rates. 
 
 ### Gameplay
 
-When each level starts, the player will be given a very basic network topology. At minimum, the topology will consist of a router, node, and server. The server will have the most defences, followed by the nodes, and finally the router. The player will start each level with a pre-determined amount of money. They will need to spend it wisely in order to achieve a balance between being secure, and keeping the nodes happy. The happiness of the nodes will decrease if a defence you introduce comes with an inconvenience for the employee. With each breach, the company revenue takes a hit. If the revenue gets below a certain point, the company goes bankrupt and you lose your job.
+The player starts with $500 that can be spent on initial upgrades to the network. The money increases by $500 each day at 100% productivity. The money gained/ lost each day is directly proportional to the overall productivity rate. If the rate is below 50% the company starts losing money. At 0% productivity, the campany loses $500 each day.
 
 ### Win and Loss conditions
 
-Win - Company revenue reaches a certain point.
+THESE ARE DISABLED IN THE DEMO.
 
-Loss - Network is compromised too many times and company goes bankrupt.
+Win - Company revenue reaches a certain amount of profit. 
+
+Loss - Network is too compromised and company goes bankrupt.
